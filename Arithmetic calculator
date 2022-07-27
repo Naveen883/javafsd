@@ -1,0 +1,25 @@
+package typecasting;
+import java.util.Scanner;
+
+public class Typecasting1 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		float pi=3.14f;
+		System.out.println("Enter the Radius:");
+		int a= sc.nextInt();
+		System.out.println("Select Any One Operations:");
+		System.out.println("press 1 for Area of circle");
+		System.out.println("press 2 for PeriMeter of circle");
+		int x=sc.nextInt();
+		if(x==1){
+			System.out.println("Area of Circle:" + pi*a*a);
+		}
+		if(x==2){
+			System.out.println("Perimeter of circle:" + 2*pi*a);
+		}
+	
+
+	}
+
+}
