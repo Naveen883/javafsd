@@ -1,0 +1,37 @@
+package typecasting;
+
+public class typecastingassis {
+
+	public static void main(String[] args) {
+		//implicit conversion
+				System.out.println("Implicit Type Casting");
+				char n='X';
+				System.out.println("Value of a: "+n);
+				
+				int p=n;
+				System.out.println("Value of b: "+p);
+				
+				float k=n;
+				System.out.println("Value of c: "+k);
+				
+				long l=n;
+				System.out.println("Value of d: "+l);
+				
+				double j=n;
+				System.out.println("Value of e: "+j);
+				
+						
+				System.out.println("\n");
+				
+				System.out.println("Explicit Type Casting");
+				//explicit conversion
+				
+				double u=66.66;
+				int f=(int)u;
+				System.out.println("Value of x: "+u);
+				System.out.println("Value of y: "+f);
+				
+			}
+		
+
+	}
