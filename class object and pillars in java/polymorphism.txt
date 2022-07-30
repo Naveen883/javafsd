@@ -1,0 +1,23 @@
+package assisted;
+
+public class Sum {
+    public int sum(int x, int y) 
+    { 
+        return (x + y); 
+    } 
+    public int sum(int x, int y, int z) 
+    { 
+        return (x + y + z); 
+    } 
+    public double sum(double x, double y) 
+    { 
+        return (x + y); 
+    } 
+    public static void main(String args[]) 
+    { 
+        Sum s = new Sum(); 
+        System.out.println(s.sum(31, 67)); 
+        System.out.println(s.sum(108, 234, 367)); 
+        System.out.println(s.sum(45.15, 22.5)); 
+    } 
+}
