@@ -1,0 +1,28 @@
+package file;
+import java.io.IOException; 
+import java.nio.file.*; 
+  
+public class Test 
+{ 
+    public static void main(String[] args) 
+    { 
+        try
+        { 
+            Files.deleteIfExists(Paths.get("c://temp//testFile2.txt")); 
+        } 
+        catch(NoSuchFileException e) 
+        { 
+            System.out.println("there is no file/directory exists"); 
+        } 
+        catch(DirectoryNotEmptyException e) 
+        { 
+            System.out.println("folder is not empty."); 
+        } 
+        catch(IOException e) 
+        { 
+            System.out.println("Invalid activity."); 
+        } 
+          
+        System.out.println("successfully deleted."); 
+    } 
+}
